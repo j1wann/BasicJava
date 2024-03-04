@@ -39,11 +39,11 @@ public class HomeWork18 {
 		//키값을 비교해서 같으면 list value값을 deptSum value에 더해주기
 		//Map에서 dname의 value를 key값으로 주고 sal의 value를 더하기
 		//
-		deptSum.put((String)list.get(0).get("dname"), (int)list.get(0).get("sal"));
+		
 		for(Map m : list) {
 			String dname = (String)m.get("dname");
 			int sal = (int)m.get("sal");
-			deptSum.put(dname, deptSum.get(dname) + sal);
+			
 		}
 		return deptSum;
 	}
